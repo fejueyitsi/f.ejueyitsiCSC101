@@ -1,24 +1,7 @@
-use std::io;
+fn main(){
+    let empty_string = String::new();
+    println!("Length of empty_string is {}",empty_string.len());
 
-fn checker(){
-
-    let mut input = String::new();
-    println!("Enter a character:");
-    io::stdin().read_line(&mut input).expect("Failed to read input");
-    let ch:char = input.trim().parse().expect("Invalid input");
-
-    if ch >= '0' && ch <= '9'
-    {
-        println!("Character '{}' is a digit",ch);
-    }
-    else
-    {
-        println!("Character '{}' is not a digit",ch);
-    }
-}
-
-fn main() {
-    // calling function
-    println!("Welcome! This program checks whether a character variable contains a digit or not");
-    checker()
+    let content_string = String::from("ComputerScience");
+    println!("Length  of content_string is {}",content_string.len());
 }

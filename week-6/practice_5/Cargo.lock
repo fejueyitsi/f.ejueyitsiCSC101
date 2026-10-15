@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "practice-5"
+name = "practice_5"
 version = "0.1.0"
